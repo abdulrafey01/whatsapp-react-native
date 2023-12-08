@@ -20,10 +20,10 @@ export default function App() {
         />
         <MyMessage
           text={
-            "Ok thanks you I'm good! How are youI'm good! How are youI'm good! How are you"
+            "Ok thanks you I'm good! How are youI'm good! How are youI'm good! How are"
           }
         />
-        <MyMessage secondMsg={true} text={"I'm good! How are you 🥲"} />
+        <MyMessage secondMsg={true} text={"I'm good! How are you"} />
         <YourMessage text={"Hi there How are you"} />
         <YourMessage
           secondMsg={true}
@@ -35,7 +35,7 @@ export default function App() {
         <MyMessage
           secondMsg={true}
           text={
-            "I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are youI'm good! How are youI'm good! How are you you I'm good! How are youI'm good! How are youI'm good! How are you"
+            "I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are youI'm good! How are youI'm good! How are you you I'm good! How are youI'm good! How are youI'm good!"
           }
         />
       </View>
