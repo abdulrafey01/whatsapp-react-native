@@ -1,4 +1,3 @@
-import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Image, Text, View } from "react-native";
 import YourMessage from "./components/YourMessage";
 import MyMessage from "./components/MyMessage";
@@ -11,7 +10,7 @@ export default function App() {
       </View>
 
       <View style={styles.messages}>
-        <YourMessage text={"Hi  there How are you"} />
+        <YourMessage text={"Hi there How are you"} />
         <YourMessage
           secondMsg={true}
           text={
@@ -26,16 +25,19 @@ export default function App() {
         <MyMessage secondMsg={true} text={"I'm good! How are you"} />
         <YourMessage text={"Hi there How are you"} />
         <YourMessage
+          nxtLine={true}
           secondMsg={true}
           text={
-            "Good to see you Good to see you Good to see you Good to see you Good to see you"
+            "Good to see you Good to see you Good to see you Good to see you Good to see you  Good to see"
           }
         />
         <MyMessage text={"Ok thanks 💕"} />
         <MyMessage
+          // nxtLine={true}
+          nxtLine={false}
           secondMsg={true}
           text={
-            "I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are youI'm good! How are youI'm good! How are you you I'm good! How are youI'm good! How are youI'm good!"
+            "I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are youI'm good! How are youI'm good! How are you you I'm good! How are youI'm good! How are youI'm good! good  youI'm good! good  youI'"
           }
         />
       </View>
@@ -54,6 +56,5 @@ const styles = StyleSheet.create({
   messages: {
     marginTop: 80,
     padding: 10,
-    gap: 10,
   },
 });
