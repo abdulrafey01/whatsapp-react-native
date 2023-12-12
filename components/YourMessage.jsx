@@ -1,18 +1,25 @@
 import React from "react";
 import { StyleSheet, Image, Text, View } from "react-native";
 
-export default function YourMessage({ text, secondMsg, nxtLine }) {
+export default function YourMessage({ text, secondMsg }) {
   return (
     <View
       style={{ ...styles.messageContainer, marginBottom: secondMsg ? 15 : 5 }}
     >
       {secondMsg ? null : <View style={styles.leftMessageArrow}></View>}
 
-      <View style={{ ...styles.messageText, paddingBottom: nxtLine ? 10 : 2 }}>
+      <View style={{ ...styles.messageText }}>
         <View style={styles.text}>
-          <Text>{text + "             "} </Text>
+          <Text>
+            {text}
+            <Text
+              style={{ color: "transparent", fontWeight: "400", fontSize: 12 }}
+            >
+              1 2 3 4 5 6
+            </Text>
+          </Text>
         </View>
-        <View style={{ ...styles.messageTime, bottom: nxtLine ? 0 : 4 }}>
+        <View style={{ ...styles.messageTime }}>
           <Text style={{ color: "grey", fontWeight: "400", fontSize: 12 }}>
             11:34
           </Text>

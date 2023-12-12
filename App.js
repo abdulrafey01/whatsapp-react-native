@@ -25,7 +25,6 @@ export default function App() {
         <MyMessage secondMsg={true} text={"I'm good! How are you"} />
         <YourMessage text={"Hi there How are you"} />
         <YourMessage
-          nxtLine={true}
           secondMsg={true}
           text={
             "Good to see you Good to see you Good to see you Good to see you Good to see you  Good to see"
@@ -33,8 +32,6 @@ export default function App() {
         />
         <MyMessage text={"Ok thanks 💕"} />
         <MyMessage
-          // nxtLine={true}
-          nxtLine={false}
           secondMsg={true}
           text={
             "I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are you I'm good! How are youI'm good! How are youI'm good! How are you you I'm good! How are youI'm good! How are youI'm good! good  youI'm good! good  youI'"
